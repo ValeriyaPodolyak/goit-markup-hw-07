@@ -13,36 +13,39 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Custom styles -->
 <link rel="stylesheet" href="./css/styles.css">
+<link rel="stylesheet" href="./css/main.min.css">
   </head>
   <body class="page" >
     <!-- Header -->
-      <header class="hdr">
-     <div class="container hdr-container">
-        <nav class="navigation hdr-container">
-        <a class="company-name" href="/">Web<span class="logo-second-color">Studio </a>
-        <ul class="list nav-list">
-          <li class="nav-item">
-            <a class="link nav-link" href="./index.html">  Студия</span> </a>
+           <header class="hdr">
+     <div class="container hdr__container">
+        <nav class="navigation">
+        <a class="navigation__company-name" href="/">Web<span class="navigation__company-name--black">Studio </span></a>
+        <ul class="list navigation__list">
+          <li class="navigation__item">
+            <a class="link navigation__link" href="./index.html">  Студия </a>
           </li>
-          <li class="nav-item">
-            <a class="link nav-link" href="./portfolio.html"><span class="current">Портфолио</span></a>
+          <li class="navigation__item">
+            <a class="link navigation__link" href="./portfolio.html"><span class="navigation__link--current">Портфолио</span></a>
           </li>
-          <li class="nav-item">
-            <a class="link nav-link" href="#">Контакты</a>
+          <li class="navigation__item">
+            <a class="link navigation__link" href="#">Контакты</a>
           </li>
         </ul>
       </nav>
       <ul class="list contacts">
-        <li><a class="link contacts-link contacts-mail" href="mailto:info@devstudio.com" aria-label="иконка конверта">
-<svg class="contacts-icons" width="16" height="12">
+        <li class="contacts__item">
+          <a class="link contacts__link contacts__mail" href="mailto:info@devstudio.com" aria-label="иконка конверта">
+<svg class="contacts__icons" width="16" height="12">
                       <use href="./images/sprite.svg#icon-envelope">
                       </use>
                     </svg>
                     info@devstudio.com
         </a>
       </li>
-        <li><a class="link contacts-link contacts-phone" href="tel:380961111111" aria-label="иконка мобильного телефона">
-<svg class="contacts-icons" width="10" height="16">
+        <li class="contacts__item">
+          <a class="link contacts__link contacts__phone" href="tel:380961111111" aria-label="иконка мобильного телефона">
+<svg class="contacts__icons" width="10" height="16">
                       <use href="./images/sprite.svg#icon-smartphone">
                       </use>
                     </svg>
@@ -245,11 +248,11 @@
 </section>            
     </main>
     <!--Footer-->
-       <footer class="ftr">
+ <footer class="ftr">
      <div class="container">
        <ul class="list ftr-list">
-         <li class="ftr-item">
-        <a class="company-name" href="/">Web<span class="studio-color">Studio </span> </a>
+         <li class="ftr-list__item">
+        <a class="navigation__company-name" href="/">Web<span class="navigation__company-name--white">Studio </span> </a>
       <address class="address">
         <p class="adrs">
         г. Киев, пр-т Леси Украинки, 26 <br />
@@ -258,36 +261,36 @@
         <a class="link adrs-link" href="tel:380961111111">+38 096 111 11 11</a>
       </address>
       </li>
-      <li class="ftr-item">
-        <p class="ftr-socials-caption">Присоединяйтесь</p>
-        <ul class="socials list">
-                <li class="ftr-socials-item">
-                  <a class="ftr-socials-link link" href="" target="_blank" rel="noopener noreferrer" aria-label="иконка Instagram">
-                    <svg class="ftr-socials-icons" width="20" height="20">
+      <li class="ftr-list__item">
+        <p class="ftr__socials-caption">Присоединяйтесь</p>
+        <ul class="ftr__socials socials list">
+                <li class="ftr__socials-item">
+                  <a class="ftr__socials-link link" href="" target="_blank" rel="noopener noreferrer" aria-label="иконка Instagram">
+                    <svg class="ftr__socials-icons" width="20" height="20">
                       <use href="./images/sprite.svg#icon-instagram_footer">
                       </use>
                     </svg>
                   </a>
                 </li>
-                <li class="ftr-socials-item">
-                  <a class="ftr-socials-link link" href="" target="_blank" rel="noopener noreferrer" aria-label="иконка Twitter">
-                    <svg class="ftr-socials-icons" width="20" height="20">
+                <li class="ftr__socials-item">
+                  <a class="ftr__socials-link link" href="" target="_blank" rel="noopener noreferrer" aria-label="иконка Twitter">
+                    <svg class="ftr__socials-icons" width="20" height="20">
                       <use href="./images/sprite.svg#icon-twitter_footer">
                       </use>
                     </svg>
                   </a>
                 </li>
-                <li class="ftr-socials-item">
-                  <a class="ftr-socials-link link" href="" target="_blank" rel="noopener noreferrer" aria-label="иконка Facebook">
-                    <svg class="ftr-socials-icons" width="20" height="20">
+                <li class="ftr__socials-item link">
+                  <a class="ftr__socials-link link" href="" target="_blank" rel="noopener noreferrer" aria-label="иконка Facebook">
+                    <svg class="ftr__socials-icons" width="20" height="20">
                       <use href="./images/sprite.svg#icon-facebook_footer">
                       </use>
                     </svg>
                   </a>
                 </li>
-                <li class="ftr-socials-item">
-                  <a class="ftr-socials-link link" href="" target="_blank" rel="noopener noreferrer" aria-label="иконка LinkedIn">
-                    <svg class="ftr-socials-icons" width="20" height="20">
+                <li class="ftr__socials-item">
+                  <a class="ftr__socials-link link" href="" target="_blank" rel="noopener noreferrer" aria-label="иконка LinkedIn">
+                    <svg class="ftr__socials-icons" width="20" height="20">
                       <use href="./images/sprite.svg#icon-linkedin_footer">
                       </use>
                     </svg>
@@ -296,11 +299,11 @@
               </ul>
       </li>
       <!-- Subscription form -->
-      <li class="ftr-subscription-item ftr-item"> 
+      <li class="ftr-subscription-item ftr-list__item"> 
         <b class="subscription-caption">Подпишитесь на рассылку</b>
         <form class="subscription-form" name="subscription-form" >
           <label class="visually-hidden" for="email-subscription">Email</label>
-            <input class="subscription-input-email-form" type="email" name="email-subscription" id="email-subscription" placeholder="E-mail" />
+            <input class="subscription-input-email-form" type="email" name="subscription-form" id="subscription-form" placeholder="E-mail" />
           <button type="submit" class="subscription-button">
             <span class="subscription-button-label">Подписаться</span> 
              <svg class="subscription-icons" width="24" height="24">
